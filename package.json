@@ -2,7 +2,7 @@
   "name": "apis-react-kanter",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://YOUR_GITHUB_USERNAME.github.io/React-Apis-Kanter",
+  "homepage": "https://KanterAlon.github.io/React-Apis-Kanter",
   "type": "module",
   "scripts": {
     "dev": "vite",
