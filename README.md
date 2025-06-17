@@ -10,3 +10,7 @@ Currently, two official plugins are available:
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+## Deployment
+
+A GitHub Actions workflow is provided to automatically build the project and publish the `dist` folder to the `gh-pages` branch whenever changes are pushed to `main`. The site will be available at [https://KanterAlon.github.io/React-Apis-Kanter](https://KanterAlon.github.io/React-Apis-Kanter).
