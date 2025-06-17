@@ -1,11 +1,11 @@
 import React from 'react';
-import Catalog from './components/Catalog';
+import Catalogo from './components/Catalogo';
 import './App.css';
 
 function App() {
   return (
     <>
-      <Catalog />
+      <Catalogo />
     </>
   );
 }
