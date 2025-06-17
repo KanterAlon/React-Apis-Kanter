@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './catalog.css';
+import './store.css';
 
 function Catalog() {
   const [items, setItems] = useState([]);
@@ -14,22 +14,24 @@ function Catalog() {
       .finally(() => setLoading(false));
   }, []);
 
-  if (loading) return <p className="msg">Cargando...</p>;
-  if (error) return <p className="msg error">{error}</p>;
+  if (loading) return <p className="message">Cargando...</p>;
+  if (error) return <p className="message error">{error}</p>;
 
   return (
-    <div className="catalog-container">
-      <h1>Tienda</h1>
-      <div className="item-list">
+    <main className="shop">
+      <h1 className="title">Tienda</h1>
+      <section className="products">
         {items.map(item => (
-          <div key={item.id} className="item-card">
-            <img src={item.image} alt={item.title} />
-            <h2>{item.title}</h2>
-            <span>${item.price}</span>
-          </div>
+          <article key={item.id} className="card">
+            <div className="image-wrapper">
+              <img src={item.image} alt={item.title} />
+            </div>
+            <p className="name">{item.title}</p>
+            <p className="price">${item.price}</p>
+          </article>
         ))}
-      </div>
-    </div>
+      </section>
+    </main>
   );
 }
 
