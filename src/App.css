@@ -1,7 +1,9 @@
 #root {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
+  width: 80%;
+  margin: 2rem auto;
   padding: 2rem;
+  background: #1e1e1e;
+  border: 2px dashed #4af;
+  border-radius: 10px;
   box-sizing: border-box;
 }

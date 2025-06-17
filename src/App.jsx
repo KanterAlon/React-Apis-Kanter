@@ -1,13 +1,13 @@
-import React from 'react';
-import Catalogo from './components/Catalogo';
-import './App.css';
+import React from 'react'
+import Shop from './components/Shop'
+import './App.css'
 
 function App() {
   return (
     <>
-      <Catalogo />
+      <Shop />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
